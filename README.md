@@ -1,4 +1,6 @@
-# Tested using Python 3.10.7 and 3.9.x
+# Environment tested on:
+ * MacOS 12.5.1, M1 Pro MacBook Pro, 32GB RAM
+ * Python 3.10.7
 
 # Steps to reproduce:
 
