@@ -1,0 +1,1 @@
+pyinstaller   diffusionbee_backend.py  --collect-all tensorflow --collect-all tensorflow-plugins  --noconfirm --clean
