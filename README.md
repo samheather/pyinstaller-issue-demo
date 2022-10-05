@@ -14,7 +14,19 @@ pip install -r requirements_m1.txt
 # next install protobuf from source otherwise pip gives a non-M1 binary
 pip install --no-binary :all: protobuf==3.19.4 --ignore-installed
 
-#Finally, try running pyinstaller:
+#Finally, try running pyinstaller (contained within the 2-line `build.sh`):
 chmod +x build.sh
 ./build.sh
+```
+
+In case you need to run the built executable:
+```
+./dist/diffusionbee_backend/diffusionbee_backend
+
+# Wait for it to start - first load would involve downloading some model weights
+# Once you get to the following console readout: `sdbk inrd`, enter the following prompt:
+
+b2py t2im {"prompt":"cat"}
+
+# If things are still failing, this will execute with CPU and not GPU.
 ```
